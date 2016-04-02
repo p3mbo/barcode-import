@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <catalog module="catalog">
+                        <children>
+                            <barcode_import translate="title" module="barcode_import">
+                                <title>Barcode Import</title>
+                                <sort_order>15</sort_order>
+                            </barcode_import>
+                        </children>
+                    </catalog>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+
+    <menu>
+        <catalog translate="title" module="catalog">
+            <children>
+                <barcode_import translate="title" module="barcode_import">
+                    <title>Barcode Import</title>
+                    <action>adminhtml/barcode_import/</action>
+                    <sort_order>099</sort_order>
+                </barcode_import>
+            </children>
+        </catalog>
+    </menu>
+</config>
+

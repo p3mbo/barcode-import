@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Pembo_BarcodeImport>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Pembo_BarcodeImport>
+    </modules>
+</config>

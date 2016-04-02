@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Pembo_BarcodeImport>
+            <version>0.1.0</version>
+        </Pembo_BarcodeImport>
+    </modules>
+
+    <global>
+        <helpers>
+            <barcode_import>
+                <class>Pembo_BarcodeImport_Helper</class>
+            </barcode_import>
+        </helpers>
+    </global>
+</config>
