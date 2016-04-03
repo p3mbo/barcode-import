@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <config>
-
     <acl>
         <resources>
             <admin>
@@ -23,7 +22,7 @@
             <children>
                 <barcode_import translate="title" module="barcode_import">
                     <title>Barcode Import</title>
-                    <action>adminhtml/barcode_import/</action>
+                    <action>adminhtml/barcodeImport_index/</action>
                     <sort_order>099</sort_order>
                 </barcode_import>
             </children>

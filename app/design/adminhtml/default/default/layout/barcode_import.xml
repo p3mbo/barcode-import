@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_barcodeimport_index_index>
+
+        <reference name="content">
+            <block type="barcode_import/adminhtml_barcodeImport_edit" name="edit" />
+        </reference>
+
+
+        <reference name="left">
+            <block type="barcode_import/adminhtml_barcodeImport_edit_tabs" name="edit_tabs">
+                <action method="addTab"><name>main_section</name><block>barcode_import/adminhtml_barcodeImport_edit_tab_main</block></action>
+            </block>
+        </reference>
+
+    </adminhtml_barcodeimport_index_index>
+</layout>

@@ -1,2 +1,4 @@
 /app/code/local/Pembo/BarcodeImport /app/code/local/Pembo/BarcodeImport
 /app/etc/modules/Pembo_BarcodeImport.xml /app/etc/modules/Pembo_BarcodeImport.xml
+/app/design/adminhtml/default/default/layout/barcode_import.xml /app/design/adminhtml/default/default/layout/barcode_import.xml
+/shell/barcode-import.php /shell/barcode-import.php

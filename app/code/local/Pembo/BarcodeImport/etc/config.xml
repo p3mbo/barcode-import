@@ -7,10 +7,75 @@
     </modules>
 
     <global>
+        <models>
+            <barcode_import>
+                <class>Pembo_BarcodeImport_Model</class>
+                <resourceModel>barcodeimport_resource</resourceModel>
+            </barcode_import>
+
+            <barcodeimport_resource>
+                <class>Pembo_BarcodeImport_Model_Resource</class>
+                <entities>
+                    <pending>
+                        <table>barcode_import_pending</table>
+                    </pending>
+                </entities>
+            </barcodeimport_resource>
+        </models>
+
+        <resources>
+            <barcode_import_setup>
+                <setup>
+                    <module>Pembo_BarcodeImport</module>
+                </setup>
+            </barcode_import_setup>
+        </resources>
+
+        <blocks>
+            <barcode_import>
+                <class>Pembo_BarcodeImport_Block</class>
+            </barcode_import>
+        </blocks>
+
         <helpers>
             <barcode_import>
                 <class>Pembo_BarcodeImport_Helper</class>
             </barcode_import>
         </helpers>
     </global>
+
+    <crontab>
+        <jobs>
+            <barcode_import_run>
+                <schedule>
+                    <cron_expr></cron_expr>
+                </schedule>
+                <run>
+                    <model>barcode_import/cron::execute</model>
+                </run>
+            </barcode_import_run>
+        </jobs>
+    </crontab>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <barcode_import>
+                    <file>barcode_import.xml</file>
+                </barcode_import>
+            </updates>
+        </layout>
+    </adminhtml>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <barcode_import before="Mage_Adminhtml">Pembo_BarcodeImport_Adminhtml</barcode_import>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>
